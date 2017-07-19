@@ -6,5 +6,5 @@ get '/' do
 end
 
 post '/inicio' do
-	"Intento 1"
+	erb(:pantallaPrincipal)
 end

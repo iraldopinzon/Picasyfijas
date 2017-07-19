@@ -8,3 +8,4 @@ Feature:
 Scenario: Debe ingresar a pantalla de juego
 	Given Iniciamos el juego
 	Then debo ver "Intento 1"
+
