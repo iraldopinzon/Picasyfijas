@@ -13,3 +13,7 @@ Scenario: Debe ingresar a pantalla de inicio
 Scenario: Debe ingresar a pantalla de inicio y ver Bienvenido
 	Given Abrimos el juego
 	Then debo ver "Bienvenido"
+
+	Scenario: Debe ingresar a pantalla de inicio y ver Iniciar
+	Given Abrimos el juego
+	Then debo ver "Iniciar"
