@@ -14,3 +14,7 @@ Given(/^Iniciamos el juego$/) do
   visit '/'
   click_button("Iniciar")
 end
+
+Given(/^Ingreso numeroPrueba "([^"]*)" en "([^"]*)"$/) do |value, field|
+  fill_in(field, :with => value)
+end
