@@ -20,5 +20,5 @@ Given(/^Ingreso numeroPrueba "([^"]*)" en "([^"]*)"$/) do |value, field|
 end
 
 Given(/^presiona "([^"]*)" validar$/) do |arg1|
-click_button("Try")
+click_button("#{arg1}")
 end

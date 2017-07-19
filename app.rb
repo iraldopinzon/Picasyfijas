@@ -12,12 +12,13 @@ post '/inicio' do
 end
 
 post '/juego' do
-	myGame = Picasyfijas.new "0987"
 	num = params["numero"]
+	myGame = Picasyfijas.new num,"0987"
+	
 	if myGame.validar_igual num 
-		session["resultado"] = "Son iguales"
+		session["resultado"] = "<h2>Son iguales</h2><br><h1>GANASTE</h1>"
 	else
-		session["resultado"] = "No son iguales"
+		session["resultado"] = "<h2>No son iguales</h2>"
 	end	
 	erb(:pantallaPrincipal)
 end
