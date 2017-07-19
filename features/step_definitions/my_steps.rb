@@ -22,3 +22,8 @@ end
 Given(/^presiona "([^"]*)" validar$/) do |arg1|
 click_button("#{arg1}")
 end
+
+Then(/^debo ver "([^"]*)" en "([^"]*)"$/) do |arg1, arg2|
+ expect(find_field("#{arg2}").value).to match /#{arg1}/m
+
+ end

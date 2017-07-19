@@ -26,3 +26,9 @@ Scenario: Ingresar un numero de 4 digitos y validarlo
 	And presiona "Try" validar 
 	And debo ver "Son iguales"
 	Then debo ver "GANASTE"
+
+Scenario: Ingresar un numero de 4 digitos hace un intento y se muestra el resultado
+	Given Iniciamos el juego
+	And Ingreso numeroPrueba "2345" en "numero"
+	And presiona "Try" validar 
+	Then debo ver "2345 No son iguales"
