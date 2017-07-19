@@ -9,3 +9,8 @@ end
 When(/^inicie game$/) do
 	click_button("Iniciar")
 end
+
+Given(/^Iniciamos el juego$/) do
+  visit '/'
+  click_button("Iniciar")
+end
