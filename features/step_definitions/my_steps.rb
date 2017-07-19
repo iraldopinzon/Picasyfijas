@@ -18,3 +18,7 @@ end
 Given(/^Ingreso numeroPrueba "([^"]*)" en "([^"]*)"$/) do |value, field|
   fill_in(field, :with => value)
 end
+
+Given(/^presiona "([^"]*)" validar$/) do |arg1|
+click_button("Try")
+end
