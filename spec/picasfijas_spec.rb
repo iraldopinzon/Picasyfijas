@@ -53,4 +53,48 @@ describe Picasyfijas do
 		#Assert
 		expect(result).to eq 4
       end
+
+      it "should say:'4' picas" do
+		#Arrange
+		miPica = Picasyfijas.new "5321","1235"
+		#Act
+		result= miPica.validar_picas
+		#Assert
+		expect(result).to eq 4
+      end
+
+      it "should say:'2' picas" do
+		#Arrange
+		miPica = Picasyfijas.new "5321","7835"
+		#Act
+		result= miPica.validar_picas
+		#Assert
+		expect(result).to eq 2
+      end
+     it "should say:'2' picas '2' fijas"  do
+		#Arrange
+		miPica = Picasyfijas.new "5321","5231"
+		#Act		
+		result= miPica.resultado		
+		#Assert
+		expect(result).to eq "Tienes 2 picas y 2 fijas"
+      end
+           it "should say:'1' picas '1' fijas"  do
+		#Arrange
+		miPica = Picasyfijas.new "5398","5231"
+		#Act		
+		result= miPica.resultado		
+		#Assert
+		expect(result).to eq "Tienes 1 picas y 1 fijas"
+      end
+
+        it "should say:Ganaste El numero '5398'"  do
+		#Arrange
+		miPica = Picasyfijas.new "5398","5398"
+		#Act		
+		result= miPica.resultado		
+		#Assert
+		expect(result).to eq "Ganaste El numero 5398"
+      end
+
 end
