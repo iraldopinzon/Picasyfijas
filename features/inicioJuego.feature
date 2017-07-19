@@ -8,3 +8,8 @@ Feature:
 Scenario: Debe ingresar a pantalla de inicio
 	Given Abrimos el juego
 	Then debo ver "Picas y Fijas V 2.1"
+
+
+Scenario: Debe ingresar a pantalla de inicio y ver Bienvenido
+	Given Abrimos el juego
+	Then debo ver "Bienvenido"
