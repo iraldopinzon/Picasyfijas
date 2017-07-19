@@ -6,5 +6,6 @@ get '/' do
 end
 
 post '/inicio' do
+	session["resultado"] = "No son iguales"
 	erb(:pantallaPrincipal)
 end

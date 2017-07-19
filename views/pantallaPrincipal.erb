@@ -4,9 +4,13 @@
 	<title>Picas y Fijas V 2.1</title>
 </head>
 <body>
-<h1 align="Center"align="">Picas y Fijas</h1>
-<h4 align="Center">Intento 1</h4>
-<input type="text" name="numero">
-No son iguales
+	<h1 align="Center"align="">Picas y Fijas</h1>
+	<h4 align="Center">Intento 1</h4>
+
+	<form action="/inicio" method="post">
+	      <input type="text" name="numero">  
+	      <input type="submit" value="Try"> 
+	</form>
+	<h2><%= session["resultado"] %></h2>
 </body>
 </html>
