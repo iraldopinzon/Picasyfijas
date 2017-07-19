@@ -12,7 +12,7 @@ Scenario: Debe ingresar a pantalla de juego
 Scenario: Ingresar un numero de 4 digitos
 	Given Iniciamos el juego
 	And Ingreso numeroPrueba "2345" en "numero"
-	Then debo ver "No son iguales"
+	Then debo ver "Intentar"
 
 Scenario: Ingresar un numero de 4 digitos y validarlo
 	Given Iniciamos el juego
