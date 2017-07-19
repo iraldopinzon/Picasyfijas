@@ -12,9 +12,10 @@ post '/inicio' do
 end
 
 post '/juego' do
-	myGame = Picasyfijas.new
-	if myGame.validar_igual "2345"
-		session["resultado"] = "No son iguales"
+	myGame = Picasyfijas.new "0987"
+	num = params["numero"]
+	if myGame.validar_igual num 
+		session["resultado"] = "Son iguales"
 	else
 		session["resultado"] = "No son iguales"
 	end	
